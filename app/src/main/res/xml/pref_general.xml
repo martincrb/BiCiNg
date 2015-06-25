@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="@string/pref_key_check_all"
+        android:title="@string/pref_title_check_all"
+        android:summaryOn="@string/pref_descriptionOn_check_all"
+        android:summaryOff="@string/pref_descriptionOff_check_all"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

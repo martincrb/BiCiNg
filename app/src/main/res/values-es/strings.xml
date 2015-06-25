@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="app_name">BiCiNg</string>
+    <string name="hello_world">Hola mundo!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="dialog_add_favourite">Añadir estación a favoritos?</string>
+    <string name="Add">Añadir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="sync_account_type">bicing.project.com</string>
+    <string name="content_authority">com.project.android.bicing</string>
+    <string name="hello_blank_fragment">Hola blank fragment</string>
+    <string name="title_activity_maps_activityv2">Mapa</string>
+    <string name="action_share">Compartir</string>
+    <string name="action_map">Ver todo en mapa</string>
+    <string name="dialog_delete_favourite">Eliminar estacion de favoritos?</string>
+    <string name="Delete">Eliminar</string>
+    <string name="format_streetnumber">Número <xliff:g id="streetnumber">%1$s</xliff:g></string>
+    <string name="format_slots">Slots: <xliff:g id="slotsnumber">%1$s</xliff:g></string>
+    <string name="favourites_indicator">Estaciones favoritas</string>
+    <string name="all_indicator">Todas las estaciones</string>
+    <!-- Notification Format -->
+    <string name="format_notification">    La estación  <xliff:g id="station">%1$s</xliff:g> se ha quedado sin bicis.</string>
+    <!-- Strings related to Notification preference -->
+    <string name="pref_last_notification">last_notification</string>
+    <string name="pref_descriptionOff_check_all">Ver todas las estaciones en barcelona</string>
+    <string name="pref_descriptionOn_check_all">Ver sólo tus estaciones favoritas </string>
+    <string name="pref_descriptionOn_new_message_notifications">Desactivar notificaciones cuando una estación se queda sin bicis. </string>
+    <string name="pref_descriptionOff_new_message_notifications">Activar notificaciones cuando una estación se queda sin bicis. </string>
+    <string name="title_activity_main_activity2">MainActivity2</string>
+    <string name="empty_list_text">No hay estaciones para mostrar</string>
+
+</resources>
