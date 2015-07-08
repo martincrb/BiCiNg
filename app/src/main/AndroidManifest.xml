@@ -29,7 +29,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAzmacZn4b_tXpNFvIlkoZtAF7sjoxCGqw" />
+            android:value="**" />
 
         <provider
             android:name=".data.BicingContentProvider"
