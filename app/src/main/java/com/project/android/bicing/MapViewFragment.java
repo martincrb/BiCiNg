@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -160,10 +161,24 @@ public class MapViewFragment extends Fragment implements LoaderManager.LoaderCal
                         SELECTED_STATION = new LatLng(latf, lonf);
                         // map.moveCamera(CameraUpdateFactory.newLatLngZoom(SELECTED_STATION, 13));
                         markersId.add(stID);
+                        float green = BitmapDescriptorFactory.HUE_GREEN;
+                        float orange = BitmapDescriptorFactory.HUE_ORANGE;
+                        float red = BitmapDescriptorFactory.HUE_RED;
+                        float color;
+                        if (Integer.parseInt(bikesStr) > 10) {
+                            color = green;
+                        }
+                        else if (Integer.parseInt(bikesStr) > 4) {
+                            color = orange;
+                        }
+                        else {
+                            color = red;
+                        }
                         markers.add(new MarkerOptions()
                                 .position(new LatLng(latf, lonf))
                                 .title(street)
-                                .snippet(snippetStr));
+                                .snippet(snippetStr)
+                        .icon(BitmapDescriptorFactory.defaultMarker(color)));
                     }
                     while (data.moveToNext());
                 }

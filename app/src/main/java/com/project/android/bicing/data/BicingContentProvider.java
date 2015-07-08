@@ -67,7 +67,7 @@ public class BicingContentProvider extends ContentProvider{
     }
 
     private Cursor getFavStationById(Uri uri, String[] projection, String sortOrder) {
-        String id = BicingContract.Station.getStationIdFromUri(uri);
+        String id = BicingContract.FavStations.getStationIdFromUri(uri);
 
         String[] selectionArgs;
         String selection;

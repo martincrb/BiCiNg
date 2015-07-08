@@ -70,6 +70,10 @@ public class BicingContract {
             return ContentUris.withAppendedId(CONTENT_URI, id);
         }
 
+        public static String getStationIdFromUri(Uri uri) {
+            return uri.getLastPathSegment();
+        }
+
     }
 
     public static abstract class Station implements BaseColumns {
